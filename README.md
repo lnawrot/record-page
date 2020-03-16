@@ -158,6 +158,7 @@ Callback executed after client is initialized. `chrome-remote-interface` client 
 * easier interactions with page (maybe with Puppeteer?)
 * more precise handling when recording stops
 * allow modifying params passed to **ffmpeg**
+* testing
 
 
 
