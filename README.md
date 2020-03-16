@@ -6,11 +6,7 @@ Uses virtual time budgeting under the hood. Produces smooth video as each frame 
 
 **Note:** Library uses *HeadlessExperimental* domain of Chrome DevTools Protocol, as the name indicates it's experimental, so it may stop working with future Chrome updates. Works well on Chrome 80.
 
-<video controls>
-    <source src="https://github.com/lnawrot/record-page/raw/master/assets/demo.mp4"
-            type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-</video>
+<img src="https://github.com/lnawrot/record-page/raw/master/assets/demo.gif" alt="record-page demo">
 
 ## Install
 
