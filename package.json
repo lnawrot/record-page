@@ -1,0 +1,38 @@
+{
+  "name": "record-page",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "chrome",
+    "video",
+    "render",
+    "capture",
+    "headless",
+    "page",
+    "website",
+    "animation",
+    "mp4",
+    "url"
+  ],
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "main": "dist",
+  "types": "dist",
+  "author": "Łukasz Nawrot",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-launcher": "^0.13.0",
+    "chrome-remote-interface": "^0.28.0",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "@types/rimraf": "^2.0.3",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "node": ">= 8",
+    "npm": ">= 6"
+  }
+}
