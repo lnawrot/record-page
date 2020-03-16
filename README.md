@@ -1,10 +1,10 @@
 # record-page
 
-Library for recording web page in high resultion with specified frame rate using Headless Chrome.
+Library for recording web page in high resolution with specified frame rate using Headless Chrome.
 
 Uses virtual time budgeting under the hood. Produces smooth video as each frame before capture is given enough time to flush all changes to the screen.
 
-**Note:** Library uses *HeadlessExperimental* domain of Chrome DevTools Protocol, as a name indicates it's experimental, so it may stop working with future Chrome updates. Works well on Chrome 80.
+**Note:** Library uses *HeadlessExperimental* domain of Chrome DevTools Protocol, as the name indicates it's experimental, so it may stop working with future Chrome updates. Works well on Chrome 80.
 
 <video controls>
     <source src="https://github.com/lnawrot/record-page/raw/master/assets/demo.mp4"
@@ -113,7 +113,7 @@ If `false` then recording will start immediately, otherwise only after **`window
 Type: `boolean`
 Default: `true`
 
-In order for frame changes to be flushed and visible on screenshot in most cases forced reflow should be applied. If set to `true` then page is forced to reflow in `requestAnimationFrame` callback (it doesn't hurt performance as virutal time is used here).
+In order for frame changes to be flushed and visible on screenshot in most cases forced reflow should be applied. If set to `true` then page is forced to reflow in `requestAnimationFrame` callback (it doesn't hurt performance as virtual time is used here).
 
 
 ##### expression
