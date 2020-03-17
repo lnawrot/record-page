@@ -1,10 +1,10 @@
 # record-page
 
-Library for recording web page in high resolution with specified frame rate using Headless Chrome.
+Library for recording web page as high resolution video with specified frame rate using Headless Chrome.
 
-Uses virtual time budgeting under the hood. Produces smooth video as each frame before capture is given enough time to flush all changes to the screen.
+Uses virtual time budgeting under the hood. Produces smooth video as each frame, before capture, is given enough time to flush all changes to the screen.
 
-**Note:** Library uses *HeadlessExperimental* domain of Chrome DevTools Protocol, as the name indicates it's experimental, so it may stop working with future Chrome updates. Works well on Chrome 80.
+**Note:** Library uses *HeadlessExperimental* domain of Chrome DevTools Protocol, as the name indicates it's experimental, so it may stop working with future Chrome updates. Confirmed to work correctly on Chrome 80.
 
 <img src="https://github.com/lnawrot/record-page/raw/master/assets/demo.gif" alt="record-page demo">
 
@@ -35,7 +35,7 @@ const record = require('record-page');
 })();
 ```
 
-Frames are recording can be stopped by defining `maxFramesCount` parameter or calling `window.RECORDING_STOP()` function in page context.
+Frames recording can be stopped by defining `maxFramesCount` parameter or calling `window.RECORDING_STOP()` function in page context.
 
 ## Docs
 
@@ -151,7 +151,7 @@ Chrome launch options.
 
 Type: `callback`
 
-Callback executed after client is initialized. `chrome-remote-interface` client is passed as an argument.
+Callback executed after client is initialized. [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface#class-cdp) client is passed as an argument.
 
 ## Roadmap
 
